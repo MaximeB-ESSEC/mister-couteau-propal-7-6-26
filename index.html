@@ -576,6 +576,33 @@ footer {
 [data-r][data-d="3"] { transition-delay: 0.30s; }
 [data-r][data-d="4"] { transition-delay: 0.40s; }
 
+/* ── MACBOOK 13" & LAPTOPS MEDIUM ───────────────────────── */
+@media (max-width: 1380px) {
+  section   { padding: clamp(52px, 6vw, 80px) 0; }
+  .h-title  { font-size: clamp(52px, 7.5vw, 96px); }
+  .h-sub    { font-size: clamp(19px, 2.4vw, 30px); }
+  .h-body   { font-size: clamp(13px, 1.2vw, 16px); }
+  .sec-title{ font-size: clamp(26px, 3.2vw, 42px); margin-bottom: 36px; }
+  .c-num    { font-size: clamp(40px, 5vw, 62px); }
+  .c-stmt   { font-size: clamp(16px, 1.8vw, 22px); }
+  .seg      { padding: 30px 24px; }
+  .seg-title{ font-size: 26px; }
+  .constat  { padding: 30px 24px; }
+  .s-card   { padding: 28px 22px; }
+  .t-block  { padding: 26px 22px; }
+  .tech-grid{ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  #hero     { padding: 100px clamp(24px, 6vw, 80px) 80px; }
+}
+
+/* ── HAUTEUR COURTE (MacBook 13" ~800px) ─────────────────── */
+@media (max-height: 820px) {
+  #hero     { min-height: 100vh; padding-top: 80px; padding-bottom: 60px; }
+  .h-title  { font-size: clamp(46px, 7vw, 80px); }
+  .h-sub    { font-size: clamp(18px, 2.2vw, 26px); }
+  .h-body   { font-size: 14px; }
+  .h-scroll { bottom: 28px; }
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 680px) {
   .c-block { flex-direction: column; gap: 8px; }
